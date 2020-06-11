@@ -23,4 +23,23 @@ pip 和 easy_install都会为你装好这些依赖的包，如果用setup.py来�
 
 · XlsxWriter
 
-### 快速入门
+### 01 快速入门
+尝试以下示例，了解怎样使用python-pptx。
+
+Hello World!
+```
+from pptx import Presentation
+
+prs = Presentation()
+title_slide_layout = prs.slide_layouts[0]
+slide = prs.slides.add_slide(title_slide_layout)
+title = slide.shapes.title
+subtitle = slide.placeholders[1]
+
+title.text = "Hello, World!"
+subtitle.text = "python-pptx was here!"
+
+prs.save('./result/example0101.pptx')
+```
+
+

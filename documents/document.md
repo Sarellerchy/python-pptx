@@ -123,7 +123,7 @@ pic = slide.shapes.add_picture(img_path, left, top, height=height)
 
 prs.save('./result/example0104.pptx')
 ```
-添加形状
+**添加形状**
 ```
 from pptx import Presentation
 from pptx.enum.shapes import MSO_SHAPE
